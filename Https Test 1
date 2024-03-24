@@ -1,0 +1,11 @@
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+local Folder  = Instance.new("Folder", ReplicatedStorage)
+Folder.Name = "Events"
+
+local Event = Instance.new("RemoteEvent", Folder)
+Event.Name = "Github Test 1"
+
+Event.OnServerEvent:Connect(function()
+	print(Event.Name.. " Başarılı!")
+end)
