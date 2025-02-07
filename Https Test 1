@@ -1,4 +1,0 @@
-while true do
-	print("Hello World")
-	wait(3)
-end
